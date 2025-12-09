@@ -1,6 +1,6 @@
 import React from 'react';
-import './home.css';
-import jsondata from "../../Json_Data/employee.json";
+import './pages.css';
+import jsondata from "../Json_Data/employee.json";
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, 
   PieChart, Pie, Cell 

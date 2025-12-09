@@ -1,0 +1,150 @@
+.card:hover {
+   background-color: lightblue;
+    cursor: pointer;
+}
+
+.employeedata{
+  margin-top: 20px;
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  th{
+    background-color: #f2f2f2;
+  }
+}
+.home-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.chart-container {
+  margin-top: 40px;
+  width: 100%;
+  height: 300px;
+}
+
+
+/* login css  */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #0063d1;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+/* Register css  */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.register-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 380px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-btn:hover {
+  background: #218838;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}

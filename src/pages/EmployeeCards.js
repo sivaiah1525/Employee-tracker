@@ -1,5 +1,5 @@
-import employees from "../../Json_Data/employee.json";
-import './EmployeeCards.css';
+import employees from "../Json_Data/employee.json";
+import './pages.css';
 
 const EmployeeCards=()=>{
     return(

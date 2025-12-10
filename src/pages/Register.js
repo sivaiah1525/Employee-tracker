@@ -26,6 +26,8 @@ export default function Register() {
     console.log(apires)
     // store user for demo
     localStorage.setItem("registeredUser", JSON.stringify(data));
+        window.alert("Register Successful");
+
     navigate("/login");
     } catch (error) {
     window.alert("Something went wrong, please try again");

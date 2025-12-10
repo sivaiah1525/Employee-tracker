@@ -23,7 +23,7 @@ export default function Login() {
     const apires = await authService.authlogin(body)
     console.log(apires)
     localStorage.setItem("auth", "true");
-
+        window.alert("Login Successful");
     navigate("/main/home");
     }catch{
     window.alert("Something went wrong, please try again");    }

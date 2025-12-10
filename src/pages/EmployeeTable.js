@@ -1,6 +1,7 @@
 import employees from "../Json_Data/employee.json";
 import './pages.css';
-const EmployeeTable = () => {
+
+export default function EmployeeTable() {
   return (
     <div className="employeedata">
       <table >
@@ -38,5 +39,4 @@ function tablehandleRowClick(emp) {
   alert(`Employee Details:\n\nID: ${emp.id}\nName: ${emp.name}\nPosition: ${emp.position}\nRank: ${emp.rank}\nCredit: ${emp.credit}\nDebit: ${emp.debit}`);
 }
 
-export default EmployeeTable;
 

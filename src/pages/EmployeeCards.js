@@ -1,7 +1,7 @@
 import employees from "../Json_Data/employee.json";
 import './pages.css';
 
-const EmployeeCards=()=>{
+export default function EmployeeCards() {
     return(
     <div className="row g-3 mt-3">
       {employees.map(emp => (
@@ -23,5 +23,3 @@ const EmployeeCards=()=>{
 function cardhandleRowClick(emp) {
   alert(`Employee Details:\n\nID: ${emp.id}\nName: ${emp.name}\nPosition: ${emp.position}\nRank: ${emp.rank}\nCredit: ${emp.credit}\nDebit: ${emp.debit}`);
 }
-
-export default EmployeeCards;

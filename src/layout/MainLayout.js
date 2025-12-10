@@ -33,7 +33,7 @@ function AppHeader() {
   const goToHome = () => navigate("/main/home");
   const goToEmployeeTable = () => navigate("/main/EmployeeTable");
   const goToEmployeeCards = () => navigate("/main/EmployeeCards");
-  const handleLogout = () => alert("Logging out...");
+  const handleLogout = () => navigate('/login');
 
   return (
     <div className="header d-flex align-items-center justify-content-between p-3 bg-light shadow-sm">

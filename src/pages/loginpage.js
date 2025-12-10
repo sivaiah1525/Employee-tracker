@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { authService  } from "../services/auth"
+
 import './pages.css';
 
 export default function Login() {
@@ -11,20 +13,25 @@ export default function Login() {
     formState: { errors }
   } = useForm();
 
-  const onLogin = (data) => {
+  const onLogin = async (data) => {
     console.log("Form Data:", data);
-
-    // simple login example
-    if (data.email === "admin@gmail.com" && data.password === "admin@12345") {
-      localStorage.setItem("auth", "true");
-      navigate("/main/dashboard");
-    } else {
-      alert("Invalid login");
+    const body = {
+      email: data.email,
+      password: data.password,
     }
+    try{
+    const apires = await authService.authlogin(body)
+    console.log(apires)
+    localStorage.setItem("auth", "true");
+
+    navigate("/main/home");
+    }catch{
+    window.alert("Something went wrong, please try again");    }
   };
+  const CreateAccount = () => navigate('/Register')
 
   return (
-    <form onSubmit={handleSubmit(onLogin)} className="login-box">
+    <form onSubmit={handleSubmit(onLogin)} className="container">
       <h2>Login</h2>
 
       <label>Email</label>
@@ -40,8 +47,14 @@ export default function Login() {
         {...register("password", { required: "Password is required" })}
       />
       {errors.password && <p className="error">{errors.password.message}</p>}
+      <div className="actionbuttons">
+        <button className="blackbutton" onClick={CreateAccount}>Create Account</button>
+        <button type="submit">Login</button>
 
-      <button type="submit">Login</button>
+      </div>
     </form>
+
+
+
   );
 }

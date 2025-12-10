@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Employee-tracker/static/css/main.e4896850.css",
-    "main.js": "/Employee-tracker/static/js/main.c5735b40.js",
+    "main.js": "/Employee-tracker/static/js/main.4c3c76c2.js",
     "static/js/206.7250f43a.chunk.js": "/Employee-tracker/static/js/206.7250f43a.chunk.js",
     "index.html": "/Employee-tracker/index.html"
   },
   "entrypoints": [
     "static/css/main.e4896850.css",
-    "static/js/main.c5735b40.js"
+    "static/js/main.4c3c76c2.js"
   ]
 }
